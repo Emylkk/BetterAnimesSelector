@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "BetteranimesSelector",
+    "description": "Distingua os animes que nao deseja mais assistir, doque que está acompanhando by EmersonRSAnjos",
+    "version": "0.0.2",
+    "web_accessible_resources": [{
+        "extensions": [
+            "BetteranimesSelector"
+        ],
+        "resources": [
+            "block.svg",
+            "style.css"
+        ],
+        "matches": [
+            "<all_urls>"
+        ]
+    }],
+    "icons": {
+        "128": "Ba.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": [
+            "https://betteranime.net/*"
+        ],
+        "js": [
+            "jquery.min.js",
+            "seletor.js"
+        ],
+        "all_frames": true
+    }],
+    "permissions": [
+        "storage"
+    ]
+}

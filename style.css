@@ -1,0 +1,17 @@
+body {
+    width: 400px;
+    height: fit-content;
+    background: dimgray;
+    font-size: small;
+    overflow-y: hidden;
+    font-family: fantasy;
+    font-weight: 200;
+}
+
+.description {
+    margin-bottom: 50px;
+    align-self: center;
+    justify-self: center;
+    color: azure;
+    text-shadow: black 2px 0px 0px;
+}
